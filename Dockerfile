@@ -5,7 +5,9 @@ WORKDIR /opt
 
 RUN yum install -y tar
 
-RUN curl --insecure --junk-session-cookies --location --remote-name --silent --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/7u75-b13/jdk-7u75-linux-x64.tar.gz
+RUN curl --insecure --junk-session-cookies --location --remote-name --silent \
+  --header "Cookie: oraclelicense=accept-securebackup-cookie" \
+  http://download.oracle.com/otn-pub/java/jdk/7u75-b13/jdk-7u75-linux-x64.tar.gz
 
 RUN tar -xvf jdk-7u75-linux-x64.tar.gz
 RUN rm jdk-7u75-linux-x64.tar.gz
