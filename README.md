@@ -1,2 +1,2 @@
 # centos-java
-Base CentOS 6.6 with Oracle JDK 7
+Base CentOS 6.7 with Oracle JDK 8
